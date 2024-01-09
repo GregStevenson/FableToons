@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "KV0wXZsJMAkHQTAeKuLIOo/aeSPUrsXc5rVKU3YEvU4=",
+  "Source": "Fabletown.Module.Publisher.Server.Oqtane",
+  "BasePath": "_content/Fabletown.Module.Publisher.Server.Oqtane",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Fabletown.Module.Publisher.Server.Oqtane\\wwwroot",
+      "Source": "Fabletown.Module.Publisher.Server.Oqtane",
+      "ContentRoot": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Server\\wwwroot\\",
+      "BasePath": "_content/Fabletown.Module.Publisher.Server.Oqtane",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Server\\wwwroot\\Modules\\Fabletown.Module.Publisher\\Module.css",
+      "SourceId": "Fabletown.Module.Publisher.Server.Oqtane",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Server\\wwwroot\\",
+      "BasePath": "_content/Fabletown.Module.Publisher.Server.Oqtane",
+      "RelativePath": "Modules/Fabletown.Module.Publisher/Module.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modules\\Fabletown.Module.Publisher\\Module.css"
+    },
+    {
+      "Identity": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Server\\wwwroot\\Modules\\Fabletown.Module.Publisher\\Module.js",
+      "SourceId": "Fabletown.Module.Publisher.Server.Oqtane",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Server\\wwwroot\\",
+      "BasePath": "_content/Fabletown.Module.Publisher.Server.Oqtane",
+      "RelativePath": "Modules/Fabletown.Module.Publisher/Module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modules\\Fabletown.Module.Publisher\\Module.js"
+    }
+  ]
+}

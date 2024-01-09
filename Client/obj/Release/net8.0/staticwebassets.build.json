@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "Hash": "o3GCXpWSgTpDdl0IE+nagdottF6g07blq330bZRyuMU=",
+  "Source": "Fabletown.Module.Publisher.Client.Oqtane",
+  "BasePath": "_content/Fabletown.Module.Publisher.Client.Oqtane",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\greg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\greg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\greg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.0\\staticwebassets\\AuthenticationService.js"
+    }
+  ]
+}

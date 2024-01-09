@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Fabletown.Module.Publisher.Server.Oqtane.props" />
+</Project>

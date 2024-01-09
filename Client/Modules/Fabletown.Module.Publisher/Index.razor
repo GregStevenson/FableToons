@@ -1,0 +1,167 @@
+@using Fabletown.Module.Publisher.Services
+@using Fabletown.Module.Publisher.Models
+
+@namespace Fabletown.Module.Publisher
+@inherits ModuleBase
+@inject IPublisherService PublisherService
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<Index> Localizer
+@inject IPageService PageService
+@inject IUserService UserService
+<div>
+    This is the publisher module. starting at the top.
+    @((MarkupString)$"<b>{PageState.User.DisplayName}</b>")
+</div>
+@if (_userPublisher != null)
+{
+    var formattedContent = FormatTemplate(template, _userPublisher);
+    <div>
+        @((MarkupString)formattedContent)
+        <button @onclick="() => NavigationManager.NavigateTo(PageState.ReturnUrl)">Return</button>
+        <ActionLink Action="Edit" Security="SecurityAccessLevel.Edit" Text=@Localizer["Edit.Text"] ResourceKey="Add" />
+
+    </div>
+}
+else if (_user != null)
+{
+    <div>
+    <div>
+     <p>@Localizer["Message.BecomePublisher"]</p>
+    </div>
+        <button type="button" class="btn btn-secondary" @onclick="GoToLearnMore">@Localizer["Button.LearnPublishing"]</button>
+        <span>&nbsp;&nbsp;</span>
+        <ActionLink Action="Add" Security="SecurityAccessLevel.Edit" Text=@Localizer["Add.Text"] ResourceKey="Add" />
+    </div>
+}
+else
+{
+    <p>@Localizer["Message.NeedLogin"]</p>
+    <button @onclick="GoToLearnMore">@Localizer["Button.LearnPublishing"]</button>
+}
+
+
+<br />
+<br />
+
+
+@* Define ShowPublisherRequestPopup and other necessary methods here *@
+
+
+@code {
+    public override List<Resource> Resources => new List<Resource>()
+    {
+        new Resource { ResourceType = ResourceType.Stylesheet, Url = ModulePath() + "Module.css" },
+        new Resource { ResourceType = ResourceType.Script, Url = ModulePath() + "Module.js" }
+    };
+
+    private Publisher _userPublisher = null;
+    private User _user = null;
+    private bool isUserPublisher = false;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _userPublisher = null;
+            if (PageState != null) {
+                _user = PageState.User;
+            }
+            if (_user != null) 
+            {
+                isUserPublisher = await PublisherService.IsPublisherAsync(_user.UserId, PageState.ModuleId);
+                if (isUserPublisher)
+                    {
+                        _userPublisher = await PublisherService.GetUserPublisherAsync(_user.UserId, PageState.ModuleId);
+                    }
+            }
+        }
+        catch (Exception ex)
+        {
+            await logger.LogError(ex, "Error Loading Publisher {Error}", ex.Message);
+            AddModuleMessage(Localizer["Message.LoadError"], MessageType.Error);
+        }
+    }
+
+    private void GoToLearnMore()
+    {
+        NavigationManager.NavigateTo(@"/add-fable/publishing-on-fabletoons");
+    }
+
+    private void BecomePublisher()
+    {
+        NavigationManager.NavigateTo("/edit");
+    }
+
+    private void ShowPublisherRequestPopup()
+    {
+        NavigationManager.NavigateTo("/edit");
+    }
+
+    string template = @"
+<div class='publisher-info'>
+    <h2>[NAME_LABEL]: [NAME]</h2>
+    <p><strong>[TAGLINE_LABEL]:</strong> [TAGLINE]</p>
+    <p><strong>[DESCRIPTION_LABEL]:</strong> [DESCRIPTION]</p>
+    <div class='publisher-images'>
+        <div>
+            <strong>[LOGO_LABEL]:</strong>
+            <img src='[LOGO_FILE_ID]' alt='Logo' style='width:320px; height:320px;' />
+        </div>
+        <div>
+            <strong>[BANNER_LABEL]:</strong>
+            <img src='[BANNER_FILE_ID]' alt='Banner' style='width:1920px; height:600px;' />
+        </div>
+    </div>
+    [AUDIT_INFO]
+</div>";
+
+   private string FormatTemplate(string template, Publisher publisher)
+{
+    // Replace placeholders for basic properties
+    template = template.Replace("[NAME]", publisher.Name ?? string.Empty);
+    template = template.Replace("[NAME_LABEL]", Localizer["Name"]);
+    template = template.Replace("[TAGLINE]", publisher.Tagline ?? string.Empty);
+    template = template.Replace("[TAGLINE_LABEL]", Localizer["Tagline"]);
+    template = template.Replace("[DESCRIPTION]", publisher.Description ?? string.Empty);
+    template = template.Replace("[DESCRIPTION_LABEL]", Localizer["Description"]);
+
+    // Handling image properties
+    template = template.Replace("[LOGO_FILE_ID]", GetImageUrl(publisher.LogoFileId, 320, 320)); // Assuming GetImageUrl method
+    template = template.Replace("[LOGO_LABEL]", Localizer["Logo"]);
+    template = template.Replace("[BANNER_FILE_ID]", GetImageUrl(publisher.BannerFileId, 1920, 600)); // Assuming GetImageUrl method
+    template = template.Replace("[BANNER_LABEL]", Localizer["Banner"]);
+
+    // Replace placeholders for auditable properties
+    template = template.Replace("[CREATED_ON]", publisher.CreatedOn.ToString("d") ?? string.Empty);
+    template = template.Replace("[CREATED_BY]", publisher.CreatedBy ?? string.Empty);
+    template = template.Replace("[MODIFIED_ON]", publisher.ModifiedOn.ToString("d") ?? string.Empty);
+    template = template.Replace("[MODIFIED_BY]", publisher.ModifiedBy ?? string.Empty);
+
+    // Optionally, if you want to put audit info in a separate box, you can prepare it here
+    string auditInfoTemplate = "<div class='audit-box'>"
+                               + "<p>[CREATED_ON_LABEL]: [CREATED_ON]</p>"
+                               + "<p>[CREATED_BY_LABEL]: [CREATED_BY]</p>"
+                               + "<p>[MODIFIED_ON_LABEL]: [MODIFIED_ON]</p>"
+                               + "<p>[MODIFIED_BY_LABEL]: [MODIFIED_BY]</p>"
+                               + "</div>";
+
+    auditInfoTemplate = auditInfoTemplate.Replace("[CREATED_ON_LABEL]", Localizer["Created On"]);
+    auditInfoTemplate = auditInfoTemplate.Replace("[CREATED_BY_LABEL]", Localizer["Created By"]);
+    auditInfoTemplate = auditInfoTemplate.Replace("[MODIFIED_ON_LABEL]", Localizer["Modified On"]);
+    auditInfoTemplate = auditInfoTemplate.Replace("[MODIFIED_BY_LABEL]", Localizer["Modified By"]);
+
+    // Insert audit box into the main template
+    template = template.Replace("[AUDIT_INFO]", auditInfoTemplate);
+
+    return template;
+}
+
+private string GetImageUrl(int? fileId, int width, int height)
+{
+    // Assuming you have a method to get the image URL from fileId
+    // Return an image URL or a placeholder if fileId is null
+    return fileId.HasValue ? $"path/to/image/{fileId}.png" : $"placeholder/for/image/size/{width}x{height}.png";
+}
+
+}

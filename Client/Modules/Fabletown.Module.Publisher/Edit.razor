@@ -1,0 +1,182 @@
+@using Oqtane.Modules.Controls
+@using Fabletown.Module.Publisher.Services
+@using Fabletown.Module.Publisher.Models
+
+@namespace Fabletown.Module.Publisher
+@inherits ModuleBase
+@inject IPublisherService PublisherService
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<Edit> Localizer
+
+
+<form @ref="form" class="@(validated ? " was-validated" : "needs-validation" )" novalidate>
+    <div class="container">
+        <div class="form-group">
+            <label for="name">@Localizer["Name.Text"]</label>
+            <input type="text" class="form-control" id="name" @bind="_name" placeholder="@Localizer["EnterName"]">
+        </div>
+
+        <div class="form-group">
+            <label for="tagline">@Localizer["Tagline.Text"]</label>
+            <input type="text" class="form-control" id="tagline" @bind="_tagline" placeholder="@Localizer["EnterTagline"]">
+        </div>
+
+        <div class="form-group">
+            <label for="description">@Localizer["Description.Text"]</label>
+            <textarea class="form-control" id="description" @bind="_description" placeholder="@Localizer["EnterDescription"]"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="logo">@Localizer["Logo.Text"]</label>
+            <FileManager FileId="@_logofileid" Filter="@_ImageFiles" @ref="_logofilemanager" />
+        </div>
+
+        <div class="form-group">
+            <label for="banner">@Localizer["Banner.Text"]</label>
+            <FileManager FileId="@_bannerfileid" Filter="@_ImageFiles" @ref="_bannerfilemanager" />
+        </div>
+
+        <!-- Add other form controls and buttons as needed -->
+    </div>
+    <button type="button" class="btn btn-success" @onclick="Save">@Localizer["Save"]</button>
+    <NavLink class="btn btn-secondary" href="@NavigateUrl()">@Localizer["Cancel"]</NavLink>
+    <br /><br />
+    @if (PageState.Action == "Edit")
+    {
+    <AuditInfo CreatedBy="@_createdby" CreatedOn="@_createdon" ModifiedBy="@_modifiedby" ModifiedOn="@_modifiedon"></AuditInfo>
+    }
+</form>
+
+@code {
+
+    private string DynamicTitle()
+    {
+        return PageState.Action == "Edit" ? Localizer["EditPublisher"] : Localizer["AddPublisher"];
+    }
+    private string _title = "";
+    public override SecurityAccessLevel SecurityAccessLevel => SecurityAccessLevel.Edit;
+
+    public override string Actions => "Add,Edit";
+
+    public override string Title => "Publisher Settings"; // DynamicTitle();
+
+    public override List<Resource> Resources => new List<Resource>()
+    {
+        new Resource { ResourceType = ResourceType.Stylesheet, Url = ModulePath() + "Module.css" }
+    };
+
+    private ElementReference form;
+    private bool validated = false;
+
+    private string _ImageFiles = ".jpg,.jpeg,.png,.gif";
+
+    private int _id;
+
+    private string _name;
+    private string _tagline;
+    private string _description;
+
+    private int _logofileid;
+    private FileManager _logofilemanager;
+    private int _bannerfileid;
+    private FileManager _bannerfilemanager;
+
+    private string _createdby;
+    private DateTime _createdon;
+    private string _modifiedby;
+    private DateTime _modifiedon;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            if (PageState.Action == "Edit")
+            {
+                _id = Int32.Parse(PageState.QueryString["id"]);
+                Publisher Publisher = await PublisherService.GetPublisherAsync(_id, ModuleState.ModuleId);
+                if (Publisher != null)
+                {
+                    _name = Publisher.Name;
+                    _tagline = Publisher.Tagline;
+                    _description = Publisher.Description;
+                    _logofileid = Publisher.LogoFileId.HasValue ? Publisher.LogoFileId.Value: -1; 
+                    _bannerfileid = Publisher.BannerFileId.HasValue ? Publisher.BannerFileId.Value : -1;
+                    _createdby = Publisher.CreatedBy;
+                    _createdon = Publisher.CreatedOn;
+                    _modifiedby = Publisher.ModifiedBy;
+                    _modifiedon = Publisher.ModifiedOn;
+                }
+            }
+           else if (PageState.Action == "Add")
+            {
+                _name = "";
+                _tagline = "";
+                _description = "";
+                _logofileid = -1;
+                _bannerfileid = -1;
+                _createdby = PageState.User.Username;
+                _createdon = DateTime.UtcNow;
+                _modifiedby = PageState.User.Username;
+                _modifiedon = DateTime.UtcNow;
+            }
+        }
+        catch (Exception ex)
+        {
+            await logger.LogError(ex, "Error Loading Publisher {PublisherId} {Error}", _id, ex.Message);
+            AddModuleMessage(Localizer["Message.LoadError"], MessageType.Error);
+        }
+    }
+
+    private async Task Save()
+    {
+        try
+        {
+            validated = true;
+            var interop = new Oqtane.UI.Interop(JSRuntime);
+            if (await interop.FormValid(form))
+            {
+                if (PageState.Action == "Add")
+                {
+                    Publisher Publisher = new Publisher();
+                    Publisher.ModuleId = ModuleState.ModuleId;
+                    Publisher.UserId = PageState.User.UserId;
+                    Publisher.Name = _name;
+                    Publisher.Tagline = _tagline;
+                    Publisher.Description = _description;
+                    Publisher.LogoFileId = _logofilemanager.FileId;
+                    Publisher.BannerFileId = _bannerfilemanager.FileId;
+                    Publisher.CreatedBy = _createdby;
+                    Publisher.CreatedOn = DateTime.UtcNow;
+                    Publisher.ModifiedBy = _modifiedby;
+                    Publisher.ModifiedOn = DateTime.UtcNow;
+  
+                    Publisher = await PublisherService.AddPublisherAsync(Publisher);
+                    await logger.LogInformation("Publisher Added {Publisher}", Publisher);
+                }
+                else
+                {
+                    Publisher Publisher = await PublisherService.GetPublisherAsync(_id, ModuleState.ModuleId);
+                    Publisher.Name = _name;
+                    Publisher.Tagline = _tagline;
+                    Publisher.Description = _description;
+                    Publisher.LogoFileId = _logofilemanager.FileId;
+                    Publisher.BannerFileId = _bannerfilemanager.FileId;
+                    Publisher.ModifiedBy = PageState.User.Username;
+                    Publisher.ModifiedOn = DateTime.UtcNow;
+                    await PublisherService.UpdatePublisherAsync(Publisher);
+                    await logger.LogInformation("Publisher Updated {Publisher}", Publisher);
+                }
+                NavigationManager.NavigateTo(NavigateUrl());
+            }
+            else
+            {
+                AddModuleMessage(Localizer["Message.SaveValidation"], MessageType.Warning);
+            }
+        }
+        catch (Exception ex)
+        {
+            await logger.LogError(ex, "Error Saving Publisher {Error}", ex.Message);
+            AddModuleMessage(Localizer["Message.SaveError"], MessageType.Error);
+        }
+    }
+}

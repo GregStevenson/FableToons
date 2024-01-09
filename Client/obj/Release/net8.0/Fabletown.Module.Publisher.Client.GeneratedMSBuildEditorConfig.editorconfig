@@ -1,0 +1,39 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Fabletown.Module.Publisher.Client
+build_property.RootNamespace = Fabletown.Module.Publisher.Client
+build_property.ProjectDir = D:\!!!FableToons\Fabletown.Module.Publisher\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\!!!FableToons\Fabletown.Module.Publisher\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/\!\!\!FableToons/Fabletown.Module.Publisher/Client/Modules/Fabletown.Module.Publisher/ConfirmationDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxlc1xGYWJsZXRvd24uTW9kdWxlLlB1Ymxpc2hlclxDb25maXJtYXRpb25EaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/\!\!\!FableToons/Fabletown.Module.Publisher/Client/Modules/Fabletown.Module.Publisher/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxlc1xGYWJsZXRvd24uTW9kdWxlLlB1Ymxpc2hlclxFZGl0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/\!\!\!FableToons/Fabletown.Module.Publisher/Client/Modules/Fabletown.Module.Publisher/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxlc1xGYWJsZXRvd24uTW9kdWxlLlB1Ymxpc2hlclxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/\!\!\!FableToons/Fabletown.Module.Publisher/Client/Modules/Fabletown.Module.Publisher/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxlc1xGYWJsZXRvd24uTW9kdWxlLlB1Ymxpc2hlclxTZXR0aW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/\!\!\!FableToons/Fabletown.Module.Publisher/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Server\\wwwroot\\Modules\\Fabletown.Module.Publisher\\Module.css",
+      "PackagePath": "staticwebassets\\Modules\\Fabletown.Module.Publisher\\Module.css"
+    },
+    {
+      "Id": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Server\\wwwroot\\Modules\\Fabletown.Module.Publisher\\Module.js",
+      "PackagePath": "staticwebassets\\Modules\\Fabletown.Module.Publisher\\Module.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Fabletown.Module.Publisher.Server.Oqtane.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Fabletown.Module.Publisher.Server.Oqtane.props",
+      "PackagePath": "build\\Fabletown.Module.Publisher.Server.Oqtane.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Fabletown.Module.Publisher.Server.Oqtane.props",
+      "PackagePath": "buildMultiTargeting\\Fabletown.Module.Publisher.Server.Oqtane.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Fabletown.Module.Publisher.Server.Oqtane.props",
+      "PackagePath": "buildTransitive\\Fabletown.Module.Publisher.Server.Oqtane.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y6Zl+AYkNhxIeqBxMrwRn869rgznXdzRU01ayV4iE04ijEkjSqjOeeB5qo4hQ8ZI7nw2wjsNRAv25qjUR4PbrA==",
+  "success": true,
+  "projectFilePath": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Fabletown.Module.Publisher.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\greg\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

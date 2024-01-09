@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.User">
+    <Position X="6.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAAAAAQAAAAgACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Models.Publisher">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAwAAQgAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Publisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Reader">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAAAACAAIAAwAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Reader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Creative">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAACCAAAAAACAAIAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Creative.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.CreativeRole">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CreativeRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.ComicCreative">
+    <Position X="8" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAEAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ComicCreative.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Comics">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEggEAAAAAAAAAAAQAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Comics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.ComicGenre">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAIIAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ComicGenre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.ComicHashtag">
+    <Position X="12" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ComicHashtag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Chapter">
+    <Position X="10" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIQAAAAAAEAAEAAAAAAAIAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Chapters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Comment">
+    <Position X="6" Y="14" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAASIAAABAEAAIEQAAAAAAAAAAACAAAgAAACAAAAAAA=</HashCode>
+      <FileName>Models\Comments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Genre">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Hashtag">
+    <Position X="13.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAgAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Models\Hashtag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Panel">
+    <Position X="10" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAQAAAAAAAAAAAAEAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Panel.cs</FileName>
+      <NewMemberFileName>Models\Pages.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Like">
+    <Position X="10.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAEAAIAQAAAAAAAAAAgCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Likes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Favorite">
+    <Position X="8.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAEgAIAQAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Favorites.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.Follower">
+    <Position X="12" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAIEAAIAQAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Followers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fabletown.Module.Publisher.Shared.Models.PublisherCreative">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAACAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PublisherCreative.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

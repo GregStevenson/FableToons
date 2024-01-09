@@ -1,0 +1,324 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\fabletownclasses.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\fabletownclasses.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8E58A1-CD09-4208-BF66-A8BB341FD669}|Client\\Fabletown.Module.Publisher.Client.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\client\\modules\\fabletown.module.publisher\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8E58A1-CD09-4208-BF66-A8BB341FD669}|Client\\Fabletown.Module.Publisher.Client.csproj|solutionrelative:client\\modules\\fabletown.module.publisher\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8E58A1-CD09-4208-BF66-A8BB341FD669}|Client\\Fabletown.Module.Publisher.Client.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8E58A1-CD09-4208-BF66-A8BB341FD669}|Client\\Fabletown.Module.Publisher.Client.csproj|solutionrelative:client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8E58A1-CD09-4208-BF66-A8BB341FD669}|Client\\Fabletown.Module.Publisher.Client.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\client\\services\\publisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8E58A1-CD09-4208-BF66-A8BB341FD669}|Client\\Fabletown.Module.Publisher.Client.csproj|solutionrelative:client\\services\\publisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\comichashtag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\comichashtag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\pages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\pages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\chapters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\chapters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\likes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\likes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\creativerole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\creativerole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\followers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\followers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|d:\\!!!fabletoons\\fabletown.module.publisher\\shared\\models\\comicgenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}|Shared\\Fabletown.Module.Publisher.Shared.csproj|solutionrelative:shared\\models\\comicgenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FabletownClasses.cd",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\FabletownClasses.cd",
+              "RelativeDocumentMoniker": "Shared\\Models\\FabletownClasses.cd",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\FabletownClasses.cd",
+              "RelativeToolTip": "Shared\\Models\\FabletownClasses.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-01-06T19:17:10.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Client\\Modules\\Fabletown.Module.Publisher\\Index.razor",
+              "RelativeDocumentMoniker": "Client\\Modules\\Fabletown.Module.Publisher\\Index.razor",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Client\\Modules\\Fabletown.Module.Publisher\\Index.razor",
+              "RelativeToolTip": "Client\\Modules\\Fabletown.Module.Publisher\\Index.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-05T02:25:03.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Client\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Client\\AssemblyInfo.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Client\\AssemblyInfo.cs",
+              "RelativeToolTip": "Client\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-05T02:24:55.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Genre.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Genre.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Genre.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Genre.cs",
+              "RelativeToolTip": "Shared\\Models\\Genre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-05T02:23:48.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PublisherService.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Client\\Services\\PublisherService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\PublisherService.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Client\\Services\\PublisherService.cs",
+              "RelativeToolTip": "Client\\Services\\PublisherService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-05T02:21:06.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Panel.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Panel.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Panel.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Panel.cs",
+              "RelativeToolTip": "Shared\\Models\\Panel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:32:51.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreativeRole.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\CreativeRole.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\CreativeRole.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\CreativeRole.cs",
+              "RelativeToolTip": "Shared\\Models\\CreativeRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:21:50.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Followers.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Followers.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Followers.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Followers.cs",
+              "RelativeToolTip": "Shared\\Models\\Followers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:20:16.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Favorites.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Favorites.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Favorites.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Favorites.cs",
+              "RelativeToolTip": "Shared\\Models\\Favorites.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:19:32.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Likes.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Likes.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Likes.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Likes.cs",
+              "RelativeToolTip": "Shared\\Models\\Likes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:18:49.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pages.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Pages.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Pages.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Pages.cs",
+              "RelativeToolTip": "Shared\\Models\\Pages.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:15:52.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Chapters.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Chapters.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Chapters.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Chapters.cs",
+              "RelativeToolTip": "Shared\\Models\\Chapters.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:14:44.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ComicHashtag.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\ComicHashtag.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\ComicHashtag.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\ComicHashtag.cs",
+              "RelativeToolTip": "Shared\\Models\\ComicHashtag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:14:12.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Comments.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Comments.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Comments.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\Comments.cs",
+              "RelativeToolTip": "Shared\\Models\\Comments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:16:41.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ComicGenre.cs",
+              "DocumentMoniker": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\ComicGenre.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\ComicGenre.cs",
+              "ToolTip": "D:\\!!!FableToons\\Fabletown.Module.Publisher\\Shared\\Models\\ComicGenre.cs",
+              "RelativeToolTip": "Shared\\Models\\ComicGenre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-04T22:06:53.251Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 153,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 31,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
